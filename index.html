@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<title>Vidas quimeras</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Josefin+Slab" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+</head>
+
+<header>
+	<div class="container">
+		<div class="row top">
+			
+			<div class="col-md-4"><a href="#home" data-ancla="home" class="off"><img src="" alt=""></a></div>
+			<div class="col-md-3"></div>
+			<div class="col-md-5">
+				<ul class='botonera'>
+					<li><a href="#nosotros" data-ancla="nosotros">Quienes somos</a></li>
+					<li><a href="#servicios" data-ancla="servicios">Novedades</a></li>
+					<li><a href="#contacto" data-ancla="contacto">Contacto</a></li>
+
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="principal vertical-centered-text" id="home">
+	<div class="col-md-8 cta"><h1>Vidas Quimeras</h1> 
+			<h4>Somos una banda under y sacamos nuestro primer disco</h4>
+			<p> Si te gusta el rock y querés apoyar a una banda under, no dejes de escucharnos!</p>
+<a  href="https://open.spotify.com/artist/5zw6odJkwvCsl1rgQUoKBx" target="_blank" class="btn btn-primary orange">ESCUCHA VQ</a>
+
+
+
+		</div>
+</div>
+
+<div class="nosotros orange" id="nosotros">
+	<div class="container">
+		<h1>Sobre nosotros</h1>
+		<p>Somos tres amigos apasionados por la música que decidimos formar una banda y escribir nuestras canciones. No imaginamos nuestras vidas sin la música blkbdklsahbsikahdklsahdlkhsalkhdklahdlkhkdhkahsldkhaslkndknlñshlsjlsajljlñjdlsjljljljljljdsjsou
+
+</p>
+	</div>
+</div>
+
+
+<div class="container servicios" id="servicios">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Novedades</h1>
+		</div>
+	</div>
+	<div class="row images">
+		<div class="col-md-3">
+			<img src="images/001-electric-guitar-1.svg" alt="">
+			<h3>Canciones</h3>
+			<p>Start Bootstrap has everything you need to get your new website up and running in no time!</p>
+		</div>
+		<div class="col-md-3">
+			<img src="images/002-electric-guitar.svg" alt="">
+			<h3>Recitales</h3>
+			<p>Start Bootstrap has everything you need to get your new website up and running in no time!</p>
+		</div>
+		<div class="col-md-3">
+			<img src="images/003-maloik.svg" alt="">
+			<h3>Contrataciones</h3>
+			<p>Start Bootstrap has everything you need to get your new website up and running in no time!</p>
+		</div>
+		<div class="col-md-3">
+			<img src="images/004-rock-symbol-of-a-hand.svg" alt="">
+			<h3>Merchandising</h3>
+			<p>Start Bootstrap has everything you need to get your new website up and running in no time!</p>
+		</div>
+	</div>
+	
+</div>
+
+<footer>
+	<div class="container" id="contacto">
+		<div class="row">
+			<div class="col-md-12">
+					<h1>CONTACTO</h1><br><br>
+
+			</div>
+		</div>
+		<div class="row social">
+		<div class="col-3"></div>	
+					<div class="col-2">
+						<a href="mailto:contacto@vidasquimeras.com"><img src="images/001-mail.svg" alt=""></a></div>
+
+					<div class="col-2">
+						<a href="https://www.facebook.com/VidasQuimerasRock" target="_blank"><img src="images/002-facebook-logo.svg" alt=""></a></div>
+
+
+					<div class="col-2">
+						<a target="_blank" href="https://www.instagram.com/vidasquimerasrock/?hl=es-la" ><img src="images/003-instagram-social-network-logo-of-photo-camera.svg" alt=""></a></div>	
+	</div>
+</footer>
+<!-- Codigo que hace que las acciones de botones y cuestiones responsive funcionen-->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script>
+	// A $( document ).ready() block.
+$(document).ready(function() {    
+$('.top a').click(function(e){
+        e.preventDefault();
+        var offset = $($(this).attr('href')).offset().top;
+        $('html, body').animate({scrollTop:offset}, 600);
+        return false;
+    });
+
+});
+	
+</script>
+</body>
+</html>
