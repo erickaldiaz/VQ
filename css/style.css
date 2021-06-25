@@ -62,8 +62,10 @@ h1{
 }
 
 .orange{
-
-	background: rgb(133, 127, 127);
+	background: black;
+}
+.btn-primary {
+	background-color: #1DB954;
 }
 
 .nosotros{
